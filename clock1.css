@@ -10,3 +10,28 @@
     --fg: #17181c;
     font-size: calc(16px + (24-16) *(100vw - 320px) / (1280 - 320));
 }
+
+body {
+    background: var(--bg);
+    color: var(--fg);
+    display: grid;
+    font: 1em/1.5 sans-serif;
+    place-items: center;
+    height: 100vh;
+}
+
+.pl {
+    position: relative;
+    width: 12em;
+    height: 12em;
+}
+
+.pl_dot {
+    background: currentColor;
+    position: absolute;
+    top: calc(50% - 0.5em);
+    left: calc(50% - 0.25em);
+    width: 0.5em;
+    height: 0.5em;
+    transform-origin: 50% 100%;
+}
